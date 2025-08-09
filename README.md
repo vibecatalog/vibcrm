@@ -53,3 +53,4 @@ VibeCatalog curates high-quality, production-ready templates for modern web apps
 This template is provided for commercial use under the VibeCatalog Template License. Redistribution or resale outside the marketplace is prohibited. See LICENSE for details.
 
 
+
