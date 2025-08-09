@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
                 <RocketIcon />
               </div>
               <span className="text-white text-xl md:text-2xl font-bold tracking-tight">
-                VibCRM
+                VibeCRM
               </span>
             </div>
             <p className="text-vibcrm-text-muted text-base md:text-lg leading-relaxed mb-6 max-w-md">
@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
 
           {/* Copyright */}
           <p className="text-vibcrm-text-muted text-sm text-center lg:text-right">
-            © 2024 VibCRM. Built with ❤️ by{' '}
+            © 2024 VibeCRM. Built with ❤️ by{' '}
             <a
               href="https://vibecatalog.com"
               target="_blank"

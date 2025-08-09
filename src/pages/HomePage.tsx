@@ -61,14 +61,14 @@ const steps = [
 
 const faqs = [
   {
-    question: "How does VibCRM's AI improve my sales process?",
+    question: "How does VibeCRM's AI improve my sales process?",
     answer:
-      "VibCRM's AI analyzes your sales data to provide intelligent lead scoring, predicts deal outcomes, and automates follow-up tasks. This helps you focus on the most promising leads and close deals faster.",
+      "VibeCRM's AI analyzes your sales data to provide intelligent lead scoring, predicts deal outcomes, and automates follow-up tasks. This helps you focus on the most promising leads and close deals faster.",
   },
   {
-    question: 'Can I integrate VibCRM with my existing tools?',
+    question: 'Can I integrate VibeCRM with my existing tools?',
     answer:
-      'Yes! VibCRM integrates seamlessly with popular tools like email platforms, calendar apps, marketing automation software, and accounting systems. Our Professional plan includes unlimited integrations.',
+      'Yes! VibeCRM integrates seamlessly with popular tools like email platforms, calendar apps, marketing automation software, and accounting systems. Our Professional plan includes unlimited integrations.',
   },
   {
     question: 'Is there a free trial available?',
@@ -145,10 +145,10 @@ const TrustedBySection: React.FC = () => (
   <Section paddingY="md" paddingX="xl">
     <AnimatedSection animation="fade-up">
       <div className="flex flex-col items-center gap-4 mb-12 md:mb-20">
-        {/* VibCRM Logo with Rocket Icon */}
+        {/* VibeCRM Logo with Rocket Icon */}
         <div className="flex items-center gap-3 mb-6">
           <RocketIcon size={48} />
-          <h2 className="text-white text-xl md:text-2xl font-bold">VibCRM</h2>
+          <h2 className="text-white text-xl md:text-2xl font-bold">VibeCRM</h2>
         </div>
         
         <SectionHeader
@@ -186,7 +186,7 @@ const HowItWorksSection: React.FC = () => (
       <SectionHeader
         eyebrow="How It Works"
         title="A Simple, 3-Step Process"
-        description="VibCRM makes sales automation effortless—follow these easy steps to get started."
+        description="VibeCRM makes sales automation effortless—follow these easy steps to get started."
       />
     </AnimatedSection>
 
@@ -246,7 +246,7 @@ const FAQSection: React.FC = () => {
         <SectionHeader
           eyebrow="FAQ's"
           title="Got Questions? We've Got Answers"
-          description="Find quick answers to the most common queries about VibCRM."
+          description="Find quick answers to the most common queries about VibeCRM."
         />
       </AnimatedSection>
 

@@ -109,7 +109,7 @@ export const Navigation: React.FC = () => {
         <div className="flex items-center gap-2">
           <RocketIcon aria-hidden="true" />
           <span className="text-vibcrm-brand text-xl md:text-2xl font-bold tracking-tight">
-            VibCRM
+            VibeCRM
           </span>
         </div>
 

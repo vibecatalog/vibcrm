@@ -79,7 +79,7 @@ export const TestimonialsSection: React.FC = () => {
       <SectionHeader
         eyebrow="Testimonials"
         title="Hear from Our Happy Customers"
-        description="Discover how VibCRM has transformed sales teams just like yours."
+        description="Discover how VibeCRM has transformed sales teams just like yours."
       />
 
       {/* Testimonials Grid */}

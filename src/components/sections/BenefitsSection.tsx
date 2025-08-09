@@ -31,8 +31,8 @@ export const BenefitsSection: React.FC = () => {
       <AnimatedSection animation="fade-up">
         <SectionHeader
           eyebrow="Benefits"
-          title="Why Choose VibCRM?"
-          description="See how VibCRM transforms your sales process."
+          title="Why Choose VibeCRM?"
+          description="See how VibeCRM transforms your sales process."
           alignment="left"
         />
       </AnimatedSection>

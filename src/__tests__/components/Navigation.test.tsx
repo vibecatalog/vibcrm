@@ -20,7 +20,7 @@ describe('Navigation', () => {
     render(<Navigation />);
 
     expect(screen.getByTestId('rocket-icon')).toBeInTheDocument();
-    expect(screen.getByText('VibCRM')).toBeInTheDocument();
+    expect(screen.getByText('VibeCRM')).toBeInTheDocument();
   });
 
   it('renders desktop navigation menu', () => {
