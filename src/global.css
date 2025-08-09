@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  /* CSS Custom Properties for Design System */
+  :root {
+    /* Base Theme Colors */
+    --background: 210 17% 3%;
+    --foreground: 0 0% 100%;
+    --card: 210 17% 3%;
+    --card-foreground: 0 0% 100%;
+    --popover: 210 17% 3%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 224 94% 56%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 10% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 10% 15%;
+    --muted-foreground: 218 14% 70%;
+    --accent: 210 10% 15%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 10% 15%;
+    --input: 210 10% 15%;
+    --ring: 224 94% 56%;
+    --radius: 0.75rem;
+
+    /* VibCRM Brand Colors */
+    --vibcrm-primary: 224 94% 56%; /* #246BFD */
+    --vibcrm-primary-dark: 230 100% 38%; /* #0040C3 */
+    --vibcrm-bg-dark: 210 17% 3%; /* #040B10 */
+    --vibcrm-card-bg: 210 30% 8%; /* #071528 */
+    --vibcrm-text-muted: 218 14% 70%; /* #AFBCD5 */
+    --vibcrm-brand: 268 63% 89%; /* #E7DEFE */
+  }
+
+  /* Global Base Styles */
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family:
+      'Satoshi',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Font Families */
+  .font-jakarta {
+    font-family:
+      'Plus Jakarta Sans',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+  }
+
+  /* Text Gradient for Hero Headings */
+  .text-gradient-hero {
+    background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      #fff 30%,
+      rgba(197, 220, 255, 0.6) 84.77%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Focus Styles */
+  .focus-visible:focus-visible {
+    @apply outline-none ring-2 ring-vibcrm-primary ring-offset-2 ring-offset-vibcrm-bg-dark;
+  }
+
+  /* Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+
+  /* Animation Performance */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Additional utility classes */
+  .aspect-dashboard {
+    aspect-ratio: 1201 / 854;
+  }
+
+  .aspect-cta {
+    aspect-ratio: 708 / 450;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}

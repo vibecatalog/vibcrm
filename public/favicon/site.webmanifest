@@ -1,0 +1,21 @@
+{
+  "name": "VibCRM - AI Powered CRM",
+  "short_name": "VibCRM",
+  "description": "The AI-powered CRM that works smarter, so you can sell more",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040B10",
+  "theme_color": "#246BFD",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
